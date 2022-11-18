@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-class authentification extends StatelessWidget {
-  const authentification({super.key});
+class Authentification extends StatelessWidget {
+  const Authentification({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,18 +34,18 @@ class authentification extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                    margin: const EdgeInsets.fromLTRB(10, 0, 10, 10),
                     child: ElevatedButton(
                       child: const Text("S'authentifier"),
                       onPressed: () {},
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    margin: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                     child: ElevatedButton(
-                      child: const Text("Créer un compte"),
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(primary: Colors.red),
+                      child: const Text("Créer un compte"),
                     ),
                   ),
                   Container(
